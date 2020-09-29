@@ -1,6 +1,37 @@
 # Project Lazarus Bits and Bobs
 Some smaller utilities for the Project Lazarus EQ1 server.
 
+## SetupLaz.bat
+
+![Screenshot of SetupLaz.bat](https://i.imgur.com/XQAhgL8.jpg)
+
+### A Batch script to simplify installation and updating of Project Lazarus
+
+This will not work on any other emu server. Maybe one day I'll write a proper launcher in a proper language.
+
+#### Features
+
+* Completely simplifies the downloading and installation process. This is the ONLY file you need to download and play.
+
+#### Requirements
+
+* Windows 7 or better
+* Fingers
+
+
+#### Usage
+
+To download and use, download the latest release from https://github.com/Trilkin/Project-Lazarus-Bits-and-Bobs/releases/tag/v1.0
+
+Unzip the contents of this file into whatever folder you'd like. The zip includes the three utilities you need (listed in the release page) as well as the script. While the idea of using a script to download a script might seem silly, this ensures that you will always get the latest files from the most current locations without having to download anything else.
+
+Just run SetupLaz.bat and follow the instructions.
+
+#### Caveats
+
+It's written in CMD Batch. It isn't the most robust thing in the world, but for what it's intended to do, it doesn't really need to be.
+
+
 ## CreateLazBatches.bat
 
 ![Screenshot of CreateLazBatches](https://i.imgur.com/VQSbnhf.jpg)
