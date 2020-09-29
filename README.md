@@ -23,6 +23,8 @@ This is written for Project Lazarus specifically, but can theoretically be adapt
 
 #### Usage
 
+To download and use click Code above, and then download zip file. Unzip the script to wherever you'd like.
+
 Backup your existing MQ2AutoLogin.ini. This script overwrites it.
 
 The script will prompt you for information. It is important you follow the instructions exactly (such as the trailing \ at the end of the folder names) or things won't work. The script is GENERALLY good about preventing you from accidentally breaking anything. Due to being written for CMD Batch, though, it's extremely easy to **intentionally** break it.
