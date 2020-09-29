@@ -23,6 +23,8 @@ This will not work on any other emu server. Maybe one day I'll write a proper la
 
 To download and use, download the latest release from https://github.com/Trilkin/Project-Lazarus-Bits-and-Bobs/releases/tag/v1.0
 
+The actual downloading script is also available in Scripts, but it requires the utilities from the release to actually work. It's best to simply download the release to have a fully streamlined process, but the option remains available if you'd like to download the utilities yourself. It's the same script SetupLaz.bat is pulling.
+
 Unzip the contents of this file into whatever folder you'd like. The zip includes the three utilities you need (listed in the release page) as well as the script. While the idea of using a script to download a script might seem silly, this ensures that you will always get the latest files from the most current locations without having to download anything else.
 
 Just run SetupLaz.bat and follow the instructions.
@@ -30,6 +32,7 @@ Just run SetupLaz.bat and follow the instructions.
 #### Caveats
 
 It's written in CMD Batch. It isn't the most robust thing in the world, but for what it's intended to do, it doesn't really need to be.
+
 
 
 ## CreateLazBatches.bat
