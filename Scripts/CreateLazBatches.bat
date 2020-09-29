@@ -530,6 +530,7 @@ IF "!team[%wt1%].name!"=="" SET "wt1=0" & GOTO writeteambatsc
     ECHO start /min eqbcs2.exe
     ECHO start MacroQuest2.exe
     ECHO cd /D "%plazfolder%"
+    TIMEOUT 3
 )>>"Play Laz\PLTeam%wt1%.bat"
 SET /a "wt1=!wt1!+1"
 GOTO writeteambatsb
