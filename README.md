@@ -73,4 +73,6 @@ SavedLazVars holds all of the information you input, allowing you to do quick ed
 
 It's written in CMD Batch. It isn't the most robust thing in the world, but for what it's intended to do, it doesn't really need to be.
 
+If your folders are under /Program Files/, this script may error out entirely on you. Windows treats the Program Files folders as walled gardens, and even if you have full admin rights. If you're funning into Access Denied errors, try pointing the script to another folder and copying new files manually. Ideally, though, don't have EQ1 under Program Files.
+
 Passwords are shown and saved in plain text. MQ2AutoLogin.ini also stores your passwords in plain text, so it's something of a wash. As of right now, the script still requires you input a password, but if there's enough request for it, I can change to allow for blank passwords. For now, the current behavior is preferred.
