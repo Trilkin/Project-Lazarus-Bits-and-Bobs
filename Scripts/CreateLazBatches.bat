@@ -635,7 +635,7 @@ ECHO    The script is now finished.
 ECHO    You should have a new folder, Play Laz, as well as potentially two new files:
 ECHO    SavedLazVars and SavedLazVars.bak
 ECHO    The .bak is generated in case something goes wrong.
-ECHO    To start playing, run Play Laz.bat.
+ECHO    To start playing, goto the Play Laz folder and run Play Laz.bat.
 ECHO    If you run into any issues running this script, feel free to let me know on Discord or in game.
 ECHO.
 pause
