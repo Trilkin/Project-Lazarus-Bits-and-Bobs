@@ -76,3 +76,33 @@ It's written in CMD Batch. It isn't the most robust thing in the world, but for 
 If your folders are under /Program Files/, this script may error out entirely on you. Windows treats the Program Files folders as walled gardens, and even if you have full admin rights. If you're funning into Access Denied errors, try pointing the script to another folder and copying new files manually. Ideally, though, don't have EQ1 under Program Files.
 
 Passwords are shown and saved in plain text. MQ2AutoLogin.ini also stores your passwords in plain text, so it's something of a wash. As of right now, the script still requires you input a password, but if there's enough request for it, I can change to allow for blank passwords. For now, the current behavior is preferred.
+
+## SingleLaunch.bat
+
+![Screenshot of SingleLaunch](https://i.imgur.com/KODs3iK.jpg)
+
+### A simple script to get you logged back in.
+
+This can be used on any emulated server (and probably Live too, honestly.)
+
+#### Features
+
+* No additional runtimes needed! Written entirely in CMD Batch.
+* Allows a quick and easy way to get a character logged (back?) in.
+
+#### Requirements
+
+* Fingers
+
+
+#### Usage
+
+To download and use click Code above, and then download zip file. Unzip the script to wherever you'd like.
+
+This writes one single file in the same folder it's in: SavedFolder. It holds exactly what it describes so you don't have to keep typing the folder path back in. Otherwise, follow the prompts.
+
+#### Caveats
+
+It's written in CMD Batch. It isn't the most robust thing in the world, but for what it's intended to do, it doesn't really need to be.
+
+There isn't a whole lot to this. I'd be surprised if some of you didn't write something like this already.
