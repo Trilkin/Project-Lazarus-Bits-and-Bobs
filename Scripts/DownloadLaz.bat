@@ -1,6 +1,6 @@
 @ECHO off
 cls
-echo    Created on September 29, 2020
+echo    Created on September 30, 2020
 echo.
 echo    Welcome to the semi-easy updater and installer for Project Lazarus.
 echo    This file should have only been downloaded via the script available on Trilkin's GitHub.
@@ -37,6 +37,8 @@ goto loadvarsa
 :lazfolder
 echo.
 echo    Be default, all client and updated files are copied to /Project Lazarus/ in the same folder as this batch.
+echo    IMPORTANT NOTE: If your folders are under /Program Files/, you may get Access Denied errors.
+echo    I recommend moving your game files elsewhere, but you can use the default folder and manually copy the files if you'd prefer.
 echo.
 set /p "lazfolder=Enter a different folder if you'd like to change this or just hit enter to accept. [ex. C:\EQ1\ProjLaz] "
 if "%lazfolder%"=="" set "lazfolder=Project Lazarus"
@@ -44,7 +46,8 @@ goto verifyfolder
 
 :newinstallprompt
 echo.
-echo    I will download any files you need. If you still have the Project Lazarus.zip, and you would like, I will also reuse it.
+echo    I can download any files you need for a fresh installation.
+echo    If you still have the Project Lazarus.zip, and you would like, I will also reuse it.
 echo    If you just want to update the string and spells files, hit n 'to' this prompt.
 echo.
 choice /N /C:YN /m "Would you like to (re)install Project Lazarus? [Y/N]" %1
