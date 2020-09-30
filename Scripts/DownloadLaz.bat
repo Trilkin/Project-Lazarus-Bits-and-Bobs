@@ -1,5 +1,4 @@
 @ECHO off
-SETLOCAL EnableDelayedExpansion
 cls
 echo    Created on September 29, 2020
 echo.
@@ -43,6 +42,17 @@ set /p "lazfolder=Enter a different folder if you'd like to change this or just 
 if "%lazfolder%"=="" set "lazfolder=Project Lazarus"
 goto verifyfolder
 
+:newinstallprompt
+echo.
+echo    I will download any files you need. If you still have the Project Lazarus.zip, and you would like, I will also reuse it.
+echo    If you just want to update the string and spells files, hit n 'to' this prompt.
+echo.
+choice /N /C:YN /m "Would you like to (re)install Project Lazarus? [Y/N]" %1
+if ERRORLEVEL ==2 goto updateprompt
+if ERRORLEVEL ==1 goto checkclient
+echo I didn't understand that.
+goto updateprompt
+
 :updateprompt
 echo.
 echo    I can download and install any updated text files for you.
@@ -52,17 +62,6 @@ if ERRORLEVEL ==2 goto mq2prompt
 if ERRORLEVEL ==1 goto textupdates
 echo I didn't understand that.
 goto updateprompt
-
-:newinstallprompt
-echo.
-echo    I will download any files you need. If you still have the Project Lazarus.zip, and you would like, I will also reuse it.
-echo    If you just want to update the string and spells files, hit 'n' to this prompt.
-echo.
-choice /N /C:YN /m "Would you like to (re)install Project Lazarus? [Y/N]" %1
-if ERRORLEVEL ==2 goto updateprompt
-if ERRORLEVEL ==1 goto checkclient
-echo I didn't understand that.
-goto newinstallprompt
 
 :verifyfolder
 echo.
@@ -206,7 +205,9 @@ if exist E3_RoF2_7.zip del E3_RoF2_7.zip
 if exist master.zip del master.zip
 If exist spells_us.zip DEL spells_us.zip
 If exist dbstr_us.txt DEL dbstr_us.txt
-del InstallerVars*
+if exist InstallerVars del InstallerVars
+if exist InstallerVars.bat del InstallerVars.bat
+if exist InstallerVars.bak del InstallerVars.bak
 echo set "lazfolder=%lazfolder%">>InstallerVars
 echo.
 echo    The script is now finished. Scroll up and check for any errors you might've encountered.
@@ -216,5 +217,6 @@ echo    https://github.com/Trilkin/Project-Lazarus-Bits-and-Bobs
 echo    to easily generate AutoLogin scripts for your team once you get MQ2 set up.
 echo    Have fun. If this script gives you any issues, please open a ticket on the above GitHub
 echo    or let me know in Discord.
+echo.
 pause
 exit
