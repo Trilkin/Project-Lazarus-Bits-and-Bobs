@@ -81,7 +81,7 @@ Passwords are shown and saved in plain text. MQ2AutoLogin.ini also stores your p
 
 ![Screenshot of SingleLaunch](https://i.imgur.com/KODs3iK.jpg)
 
-### A simple script to get you logged back in.
+### A simple script to get you logged back in to an account of your choice.
 
 This can be used on any emulated server (and probably Live too, honestly.)
 
@@ -93,6 +93,7 @@ This can be used on any emulated server (and probably Live too, honestly.)
 #### Requirements
 
 * Fingers
+* Probably MQ2AutoLogin
 
 
 #### Usage
